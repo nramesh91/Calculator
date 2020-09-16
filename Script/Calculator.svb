@@ -16,5 +16,5 @@ Sub Calculator
     Else
       MsgBox("Entered values are not Numeric...")
     End If    
-  Loop While MsgBox("Do you want to continue..?", vbYesNo) < 7
+  Loop While MsgBox("Do you want to continue?", vbYesNo) < 7
 End Sub

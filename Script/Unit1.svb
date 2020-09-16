@@ -1,0 +1,26 @@
+﻿Sub Test1()
+  'Runs the "calc" tested application.
+  Call TestedApps.calc.Run
+  'Clicks the 'Five' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Number_pad.Five.Click
+  'Clicks the 'Plus' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Plus.Click
+  'Clicks the 'Four' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Number_pad.Four.Click
+  'Clicks the 'Plus' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Plus.Click
+  'Clicks the 'Equals' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Equals.Click
+  'Clicks the 'Clear' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Display_controls.Clear.Click
+  'Clicks the 'Four' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Number_pad.Four.Click
+  'Clicks the 'Plus' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Plus.Click
+  'Clicks the 'Five' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Number_pad.Five.Click
+  'Clicks the 'Equals' object.
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Equals.Click
+  'Closes the 'wndCalculator' window.
+  Call Aliases.ApplicationFrameHost.wndCalculator.Close
+End Sub

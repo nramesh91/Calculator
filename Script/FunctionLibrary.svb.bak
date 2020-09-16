@@ -1,0 +1,29 @@
+﻿Sub LaunchApp
+  Call TestedApps.Calc.Run
+End Sub
+
+Sub ClickOnNumber(Number)
+  sNumber = CStr(Number)
+  If Len(sNumber) > 1 Then
+    For i = 1 to Len(sNumber)
+      num = CInt(Mid(sNumber, i, 1))
+      Log.Message(num)
+      Sys.Process("Microsoft.WindowsCalculator").FindChild("Text", num, 2000).Click
+    Next
+  Else
+    Sys.Process("Microsoft.WindowsCalculator").FindChild("Text", Number, 2000).Click
+  End If
+End Sub
+
+Sub ClickOnOperation(OperationName)
+  Sys.Process("Microsoft.WindowsCalculator").UIAObject("Calculator").UIAObject("LandmarkTarget").UIAObject("Standard_operators").UIAObject(OperationName).Click
+End Sub
+
+Sub DisplayResult
+  Call Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.Standard_operators.Equals.Click
+  MsgBox("Your result is: "&Aliases.Microsoft_WindowsCalculator.Calculator.LandmarkTarget.UIAObject("Display_is_0").UIAObject("TextContainer").UIAObject("NormalOutput").Text)
+End Sub
+
+Sub CloseApp
+  Call Aliases.ApplicationFrameHost.wndCalculator.Close
+End Sub

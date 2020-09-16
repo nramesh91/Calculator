@@ -1,0 +1,20 @@
+﻿'USEUNIT FunctionLibrary
+
+Sub Calculator
+  Do
+    Number1 = InputBox("Enter First Number")
+    Number2 = InputBox("Enter Second Number")
+    OperationName = InputBox("WhichOperation(Plus, Minus, Multiply_by, Divide_by)")
+    If IsNumeric(Number1) and IsNumeric(Number2) Then
+      Log.Message("Number1 and Number2 both are Numeric")
+      Call LaunchApp
+      Call ClickOnNumber(Number1)
+      Call ClickOnOperation(OperationName)
+      Call ClickOnNumber(Number2)
+      Call DisplayResult
+      Call CloseApp
+    Else
+      MsgBox("Entered Numbers are not Numeric...")
+    End If    
+  Loop While MsgBox("Do you want to continue..?", vbYesNo) < 7
+End Sub

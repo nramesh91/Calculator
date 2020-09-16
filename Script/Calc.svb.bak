@@ -1,0 +1,14 @@
+﻿'USEUNIT FunctionLibrary
+
+Sub Calc
+  Number1 = Cint(InputBox("Enter First Number"))
+  Number2 = Cint(InputBox("Enter Second Number"))
+  OperationName = InputBox("WhichOperation(Plus, Subtract, Multiply, Divide")
+  
+  Call LaunchApp
+  Call ClickOnNumber(Number1)
+  Call ClickOnOperation(OperationName)
+  Call ClickOnNumber(Number2)
+  Call DisplayResult
+  Call CloseApp
+End Sub

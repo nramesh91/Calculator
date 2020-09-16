@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Unit1" key="{D228DC3C-9156-432A-8BF0-3CB795F46033}" path="Unit1.svb" />
+		<child name="Calculator" key="{A28E0081-1316-4614-8221-08785C9EFC22}" path="Calculator.svb" />
+		<child name="FunctionLibrary" key="{E514B6AD-0772-4226-B78F-1CB11E08FDD5}" path="FunctionLibrary.svb" />
+	</children>
+</Root>

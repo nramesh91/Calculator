@@ -14,7 +14,7 @@ Sub Calculator
       Call DisplayResult
       Call CloseApp
     Else
-      MsgBox("Entered Numbers are not Numeric...")
+      MsgBox("Entered values are not Numeric...")
     End If    
   Loop While MsgBox("Do you want to continue..?", vbYesNo) < 7
 End Sub
